@@ -1,0 +1,10 @@
+[package]
+name = "sqlw"
+version = "0.1.0"
+edition = "2021"
+description = "Single-writer SQLite service with local IPC, idempotent writes, WAL + synchronous=FULL"
+
+[dependencies]
+rusqlite = { version = "0.40", features = ["bundled", "hooks"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
